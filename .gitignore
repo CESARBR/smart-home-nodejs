@@ -4,5 +4,4 @@ dist/
 .vscode/
 
 # service account keys
-src/*.json
 .firebaserc
