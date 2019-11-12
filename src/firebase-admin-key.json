@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "beatbox-poc02",
+  "private_key_id": "9700cd9e2f7fbce9d91383cb1e7b4dd876082eb1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCncRqtI/n1Fpit\ngEMlMNpQe6HOnJgKKP613yi1aqMz1/UN4z0C6tVWIT21ck8A7EAYlzjRzY+5S/Kb\nys7VJ3IJUQTQOgO1/0SisXeuz38Iimp0mMF+EEZ9GmWyBKwUua7kWEg477xUruNn\nFspDFTb5VVuMwM3B0rhpar+fgXYvKz8NTI02awwLTtz7+zLj6bPHp8Lo/z6NFFgW\n/4NmJJAvd6B8ctPChfvBAvqXKF9l908Qy/kBukSsikRXZ9np7khwehHO9VqmI3i/\nkQEIBz0UF4qPoUY6WJVJWsKUnzLwaaQgs0sgnJa0kCl2H9e5JjrPs7extOES+COz\nQbVmGSM1AgMBAAECggEAHv4R7HtMwF8y2mZzxzYAKsZ/gDE++R52au6H5/B5jdaK\nvsvRVrFl1H/pnqSuV+LiyEpxU3Ajiq4ylUCYQR8AfhX3eJ1MY4sAxsZnez1f65JH\nOxatNerISU6yBR3VRi7KXuyyTYueReRrJgEzZfBO0R7KB8cGLrqUtLp0Bo+dcwRW\n93FBTQzbFnELpeiVXpLmOLMQ3hrbciRdJcD/ApnxbhHG15cHUrwKe5se+yUB77iR\nLQD10NRz0Jt3wXbp7MZhUrAu2DMEGzxAMBeSN3uaBJGw4gIw517kCW+//dqQXLgH\nl2TgwZgJ1hnhHt8svJoA0Cz2y18Q2+LjUgXkakh5oQKBgQDZLjinhft3q5CYHb4K\nbvkPqPkhJCRDSA0ybBxnOBrwxEHX0kJM1NtSB+Bc0hmciFWKxxfJC7XGkBH1+cMV\nSHVswuMHl4gK3GfiiXhI1hta6zpmalnWbf5q81I5PUZoSqJfG/tTTltZWZHZKJSO\nQjfn6jz+KnRhE06VGFosmQ2B5QKBgQDFXu47eEZ3ZxhZTC9ZquhJzc5kSjdffeK5\n83s12b/4PppQVWWoZLzBQuuAdiPftbl38Xyqv10P9WEzR8wujADJKyhcNRZg6JGH\nSJ7JHn/KI84YXY+4G/XO3Xtyx22YbM+WqQM4nFQOIfdgW40BME1K99QsUMZ+cCFG\nU4xC+alHEQKBgQDRisce2ybFT8MzAX9akbe8ZEv6reRPBjW1cJn2/SsBIlpk4XkW\nqEjz3KWc6RnM7b2bKHzKfYHlExxBN7oBzud9CIwDxzB7SizxZbGolOvPzSWLqxEC\n0x2mEx5CG9zSwy/mlBjpR7DbhJAz9fNfToSiPl6a3FttTjODpvtaDFH8AQKBgQCJ\nv05PLQspDEe/Et+9Gf2SfNN9xRpOSAJzuw2TsMw9ChwS0vbnBp+B1h2cg1dYK3Es\n19olJPdjSuMysfo7xjRKMhex+s8KhWYD39gKD4IqZsDQ2oOSf9kXLhaZLbw8dDyR\nLpXz7Y7wah5HHr4TRU28c6id4SYXWlSuy2KJ38qXsQKBgQC0Z5lBsE5pT835AmKh\n8xaN4VDkDi48YF6n44rFOcv3Crxa+nMmIqbBmB6/2ahKZeEZ8KvMEHunrXYRYhYV\nT4Vp09c/QtfYvjfr+AY2RNbMqDKSTr3C2GSnEkYoxu/BLok6Fce8sNUB23YdibMk\naLzgGccpniz3hmKsKVziQzKHWA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-16ukd@beatbox-poc02.iam.gserviceaccount.com",
+  "client_id": "100037822830117019465",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-16ukd%40beatbox-poc02.iam.gserviceaccount.com"
+}

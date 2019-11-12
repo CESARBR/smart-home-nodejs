@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "beatbox-poc02",
+  "private_key_id": "ff00e8cc880c450400fb8629cac4f6fb78862474",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDE9djKHI1wI1lz\nk0LDr5KHQAuvVIcOM0Yq5Mr9kam18jFCJ/llBKhZhpjGEPYobYJ/AGeSWpyi6HCV\niinx3rEFpr5Zt1fZ9PVop+PnYnTdH+BWpIw5Iw95G0z7QNSM6axnga5pB3w1vwdN\n45inBajLYz4COlRfjIGR5S2ljJ1k5Px2+mXvdGBSMpDoG4x6hgLV7aVcSdF1hzRx\ntXx0Eb8TKmtEBAtaAw9xylhjVfhbQ8QhYtnLX26B9J03/uYq/l3CV8PkAMWlijOg\n4ljZEfhL9grnjU0L/PQvzB/Ki3i0UUzsREiTmUTAK+rzuJqQEife1s6ycCXp3EOW\nut5SxFbjAgMBAAECggEACn7GZr0VjrrDfHrsKgmqapYvr5yqEBUMkYj2UoOD7vpE\nRHzLneXQPR0ExqEgWZ0kQM8G6QldCWB1B1lNma7YV5XACBkF9f5G/KTdnXaYnzCg\npd1H/49uHQtZ+cir/gPbOC5bDdh+EBscZFRTARHP7pT2OLlekszY5qsdcit6nTKi\nhQUGoEMf7E6SE7w/ih9xIcd30Aff0NvtI66E3vSnoyoIpacgbUwtve+RJj+S/fYX\nco4sg20UKzGbQUrzHKMuSsvcF2gncmaTUxpoXrGZZRDNULlbQjo8ompC2iTBqmua\nDxg4KXoM4vYnNILEx/0Qh5ivZyzma1EE36NNEGXNoQKBgQDuzvOpqLbse8knYrS8\nXgvfndCSWu5WbaCSOh1/SaeYbUqI2TdJ9zZcglHKQt4FFxWh0TnDEi9BoSV8Svbi\n54hNLC3ExsGLFEk1vkaUfyFwbPsXw370/yIDuUg5NMN0sR2VplKWABDNAQRO1mFS\n2ZQgDAKSU2PudTPt8YWy16tmUQKBgQDTI6socMcHATr7L/2c7lMp+fqt96juukYb\nmNZkAkNQV9eZmmRkDPjmVFFQwPTF7H/1MnDKuDEZbpmNh3U1mLWkH9Yvud6mtkla\np+FnDexcR0QU2js86dZRBKJkJMWUy0Ow2/PGeq5trG3tdxWXTBegtOACQ6rpC8/r\nrzGhBwi48wKBgEfmn45xccH58zKckXY1irWlOmsWXbRABZyBSuhMMN2/6jUR0Ye/\nmup3glC3mUlHDghOimmlS/0im7q0h2kB9RPnPVCF1zgcv34i7/U94b+L0H3zKoJx\nXrhoTMqMjFzSBupLzYnEM0rGB5oFCgB76hFMDGoqGWhueVgm4+5Y6Q5BAoGAbgbg\nYqqijNvvSIaxut3XKMDECXRN7FnVvvvefS9QtMWR7NGwDxNTgXPfDB4BcELWS4iF\njp59t6sTCdXVFqEFxwlwLF7H0Eid4UgrBfETguMAb31p8UxKCt5HYbhn3ioulDOK\nzZuQ2kZI4r5z2ewlQ/H96jApGFi3eTJKwodP3FECgYEAuTXx530x28UHN0Kb0gsR\n7nkhklKbBJ8kM9LFy+zjjV+hq6j20s1Eeo2k0PmiTO06uYIQY5MnXp5wFVgmxPPW\n5TpIlQCQFTIk203qVP0EGZXbqs0Bglc6DpUfgxv1WjZvQxve+itb+jt7FlLySn7G\nu0O79KqJhaAX5JPFHsNMEJ4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "beatbox-service-account@beatbox-poc02.iam.gserviceaccount.com",
+  "client_id": "115821410027523550148",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/beatbox-service-account%40beatbox-poc02.iam.gserviceaccount.com"
+}
