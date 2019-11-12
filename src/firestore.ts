@@ -22,10 +22,13 @@ import { SmartHomeV1SyncDevices, SmartHomeV1ExecuteRequestExecution } from 'acti
 import { ApiClientObjectMap } from 'actions-on-google/dist/common'
 import {googleCloudProjectId} from './config-provider'
 
+const serviceAccount = require('./firebase-admin-key.json');
+
 admin.initializeApp({
-  credential: admin.credential.applicationDefault(),
+  credential: admin.credential.cert(serviceAccount),
   databaseURL: `https://${googleCloudProjectId}.firebaseio.com`,
-})
+  })
+
 const db = admin.firestore()
 const settings = {timestampsInSnapshots: true}
 db.settings(settings)
