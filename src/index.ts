@@ -37,6 +37,33 @@ import * as Firestore from './firestore'
 import * as Auth from './auth-provider'
 import * as Config from './config-provider'
 
+var skioApp = require('express')();
+var http = require('http').Server(skioApp);
+var io = require('socket.io')(http);
+var skio: any;
+
+async function recv(socket: any) {
+        return new Promise((resolve) => {
+                socket.once('RESPONSE', (message: any) => {
+                        resolve(message);
+                });
+        });
+}
+
+io.on("connection", function(socket: any) {
+	console.log("socket.io user connected");
+	skio = socket;
+
+	// MESSAGE: Async message from endpoint
+        socket.on("MESSAGE", function(message: any) {
+                console.log(message);
+        });
+});
+
+http.listen(3001, function() {
+        console.log("listening on *:3001");
+});
+
 const expressApp = express()
 expressApp.use(cors())
 expressApp.use(morgan('dev'))
@@ -121,8 +148,17 @@ app.onExecute(async (body, headers) => {
 
   const {devices, execution} = body.inputs[0].payload.commands[0]
   await asyncForEach(devices, async (device: {id: string}) => {
-    try {
+  try {
       const states = await Firestore.execute(userId, device.id, execution[0])
+
+      if (skio) {
+	  // Send request & wait
+          var request = Object.assign({}, device, execution[0]);
+	  skio.emit('REQUEST', request);
+	  const rsp = await recv(skio);
+	  console.log("RESPONSE:", rsp);
+      }
+
       successCommand.ids.push(device.id)
       successCommand.states = states
 
