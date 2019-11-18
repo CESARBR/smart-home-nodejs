@@ -57,7 +57,11 @@ io.on("connection", function(socket: any) {
 	// MESSAGE: Async message from endpoint
         socket.on("MESSAGE", function(message: any) {
                 console.log(message);
-        });
+	});
+	socket.once("disconnect", function() {
+		skio = null;
+		console.log("socket.io user disconnected");
+	});
 });
 
 http.listen(3001, function() {
