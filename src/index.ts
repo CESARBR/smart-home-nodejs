@@ -68,12 +68,17 @@ http.listen(3001, function() {
         console.log("listening on *:3001");
 });
 
-const expressApp = express()
+var fs = require('fs');
+var expressApp = express();
 expressApp.use(cors())
 expressApp.use(morgan('dev'))
 expressApp.use(bodyParser.json())
 expressApp.use(bodyParser.urlencoded({extended: true}))
 expressApp.set('trust proxy', 1)
+var https = require('https').createServer({
+		key: fs.readFileSync('server.key'),
+		cert: fs.readFileSync('server.cert')
+		}, expressApp);
 
 Auth.registerAuthEndpoints(expressApp)
 
@@ -236,6 +241,10 @@ app.onDisconnect(async (body, headers) => {
   await Firestore.disconnect(userId)
 })
 
+expressApp.get('/', function(req: any, res: any) {
+	res.send('Smart Home Demo');
+});
+
 expressApp.post('/smarthome', app)
 
 expressApp.post('/smarthome/update', async (req, res) => {
@@ -296,7 +305,7 @@ expressApp.post('/smarthome/delete', async (req, res) => {
 
 const appPort = process.env.PORT || Config.expressPort
 
-const expressServer = expressApp.listen(appPort, async () => {
+const expressServer = https.listen(appPort, async () => {
   const server = expressServer.address() as AddressInfo
   const {address, port} = server
 
