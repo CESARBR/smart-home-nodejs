@@ -68,12 +68,17 @@ http.listen(3001, function() {
         console.log("listening on *:3001");
 });
 
-const expressApp = express()
+const fs = require('fs');
+const expressApp = express();
 expressApp.use(cors())
 expressApp.use(morgan('dev'))
 expressApp.use(bodyParser.json())
 expressApp.use(bodyParser.urlencoded({extended: true}))
 expressApp.set('trust proxy', 1)
+var https = require('https').Server({
+		key: fs.readFileSync('server.key'),
+		cert: fs.readFileSync('server.cert')
+		}, expressApp);
 
 Auth.registerAuthEndpoints(expressApp)
 
@@ -296,7 +301,7 @@ expressApp.post('/smarthome/delete', async (req, res) => {
 
 const appPort = process.env.PORT || Config.expressPort
 
-const expressServer = expressApp.listen(appPort, async () => {
+const expressServer = https.listen(appPort, async () => {
   const server = expressServer.address() as AddressInfo
   const {address, port} = server
 
